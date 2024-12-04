@@ -21,11 +21,16 @@ public class InputCommandManager : MonoBehaviour
         _playerActions.Enable();
     }
 
-    private void Update()
+    public void OnAim()
     {
         Vector2 aimDelta = _playerActions.FindAction("Aim").ReadValue<Vector2>();
         aimDelta *= sensitivity;
         AimCommand aimCommand = new AimCommand(player.crosshair, aimDelta);
         player.MoveCrosshair(aimCommand);
+    }
+
+    public void OnShoot()
+    {
+        player.Shoot();
     }
 }
