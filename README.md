@@ -10,3 +10,6 @@ The game manager and their status as a decoy is randomized when enabled
 # Other Pattern
 The game manager is a singleton that the ducks and decoys access to let them know when a duck has died or the player needs to be penalized for hitting a decoy
 
+I had an issue getting the mouse inputs to work but the logic is all there
+
+![NVIDIA_Overlay_MgqbBsyeAz](https://github.com/user-attachments/assets/598ee289-b764-4fbf-a085-d5ea67024e17)
